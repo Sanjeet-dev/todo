@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*,*::after,::before{
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.outer-block {
+    width: 500px;
+    margin: 2 auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    background-color: #d4d6dd;
+    font-family: 'Roboto', sans-serif;
+
+}
+#todo-list {
+    width: 450px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 2px;
+    padding-left: 10px;
+    border-radius: 12px;
+    background-color: #fdfdf9;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: 2px solid #ccc;
+  }
+  
+  button[type="submit"],.submit {
+    position: relative;
+    margin-left: px;
+    border-radius: 0 50px 50px 0;
+    outline: none;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+
+  }
+  
+  
+  input[type="text"] {
+    text-align: center;
+    height: 40px;
+    width:280px;
+    background-color: #eeeeee;
+    margin-left: 5px;
+    flex: 1;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    position: relative;
+    text-transform: lowercase;
+    font-size:larger;
+    color: black;
+    font-weight:lighter;
+    }
+  input[type="text"]::placeholder {
+    color: #ddd;
+  }
+  
+  input[type="submit"],.submit,.event_note {
+    position: relative;
+    left: -10px;
+    border-radius: 0 50px 50px 0;
+    outline: none;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    bottom: -4.22px;
+  }
+  .event_note{
+    margin-left: 10px;
+  }
+  .submit{
+    width: 50px;
+    background-color: green;
+    color: white;
+  }
+  hr{
+    border-top: 1px dotted #8c8b8b;
+}
+.check{
+  margin-right: 10px;
+}
+  
+  .todo{
+    cursor: pointer;
+  }
+  
+  #todo-list ul{
+    padding: 2px;
+    margin: 1px;
+  }
+ 
+  .todo{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  }
+  
+  #todo-list li.completed {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+  
