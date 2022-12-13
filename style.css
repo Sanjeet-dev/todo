@@ -2,6 +2,7 @@
 *,*::after,::before{
   box-sizing: border-box;
 }
+/* body is about the whole page where we have outer block and form with todo list */
 body{
   padding: 0;
   margin: 0;
@@ -12,6 +13,8 @@ body{
   align-items: center;
 
 }
+
+/* This is block which hold form and todolist inside */
 .outer-block {
     width: 500px;
     margin: 2 auto;
@@ -33,7 +36,8 @@ body{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border: 2px solid #ccc;
   }
-  
+
+  /* This is the button for todo list icon which contain styling feature here*/
   button[type="submit"],.submit {
     position: relative;
     margin-left: px;
@@ -42,10 +46,9 @@ body{
     height: 40px;
     border: none;
     cursor: pointer;
-
   }
   
-  
+  /* This is the input text where I can write task*/
   input[type="text"] {
     text-align: center;
     height: 40px;
@@ -84,6 +87,8 @@ body{
     background-color: green;
     color: white;
   }
+
+  /* hr tag helps in creating stylish straight line for creating a block for added task */
   hr{
     border-top: 1px dotted #8c8b8b;
 }
